@@ -1,0 +1,24 @@
+	upstream backend {
+	    server api:8080; #app docker
+	}
+
+	server {
+	    listen 8081;
+	
+	    location / {
+	        proxy_pass http://backend;
+	    }
+	}
+	
+	
+	server {
+	    listen 80; # Porta para o frontend
+	    #server_name frontend.example.com; # Nome de domínio opcional
+	
+	    location / {
+	        # Configuração do frontend aqui
+	        root /usr/share/nginx/html; # Diretório dos arquivos estáticos do frontend
+	        index index.html;
+	    }
+	}
+
