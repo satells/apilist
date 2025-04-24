@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "name": "Animals",
+        "slug": "animals"
+    },
+    {
+        "id": 2,
+        "name": "Anime",
+        "slug": "anime"
+    },
+    {
+        "id": 3,
+        "name": "Anti-Malware",
+        "slug": "anti-malware"
+    },
+    {
+        "id": 4,
+        "name": "Art & Design",
+        "slug": "art-and-design"
+    },
+    {
+        "id": 5,
+        "name": "Authentication & Authorization",
+        "slug": "authentication-and-authorization"
+    },
+    {
+        "id": 6,
+        "name": "Blockchain",
+        "slug": "blockchain"
+    },
+    {
+        "id": 7,
+        "name": "Books",
+        "slug": "books"
+    },
+    {
+        "id": 8,
+        "name": "Business",
+        "slug": "business"
+    },
+    {
+        "id": 9,
+        "name": "Calendar",
+        "slug": "calendar"
+    },
+    {
+        "id": 10,
+        "name": "Cloud Storage & File Sharing",
+        "slug": "cloud-storage-and-file-sharing"
+    },
+    {
+        "id": 11,
+        "name": "Continuous Integration",
+        "slug": "continuous-integration"
+    },
+    {
+        "id": 12,
+        "name": "Cryptocurrency",
+        "slug": "cryptocurrency"
+    },
+    {
+        "id": 13,
+        "name": "Currency Exchange",
+        "slug": "currency-exchange"
+    },
+    {
+        "id": 14,
+        "name": "Data Validation",
+        "slug": "data-validation"
+    },
+    {
+        "id": 15,
+        "name": "Development",
+        "slug": "development"
+    },
+    {
+        "id": 16,
+        "name": "Dictionaries",
+        "slug": "dictionaries"
+    },
+    {
+        "id": 17,
+        "name": "Documents & Productivity",
+        "slug": "documents-and-productivity"
+    },
+    {
+        "id": 18,
+        "name": "Email",
+        "slug": "email"
+    },
+    {
+        "id": 19,
+        "name": "Entertainment",
+        "slug": "entertainment"
+    },
+    {
+        "id": 20,
+        "name": "Environment",
+        "slug": "environment"
+    },
+    {
+        "id": 21,
+        "name": "Events",
+        "slug": "events"
+    },
+    {
+        "id": 22,
+        "name": "Finance",
+        "slug": "finance"
+    },
+    {
+        "id": 23,
+        "name": "Food & Drink",
+        "slug": "food-and-drink"
+    },
+    {
+        "id": 24,
+        "name": "Games & Comics",
+        "slug": "games-and-comics"
+    },
+    {
+        "id": 25,
+        "name": "Geocoding",
+        "slug": "geocoding"
+    },
+    {
+        "id": 26,
+        "name": "Government",
+        "slug": "government"
+    },
+    {
+        "id": 27,
+        "name": "Health",
+        "slug": "health"
+    },
+    {
+        "id": 28,
+        "name": "Jobs",
+        "slug": "jobs"
+    },
+    {
+        "id": 29,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+    },
+    {
+        "id": 30,
+        "name": "Music",
+        "slug": "music"
+    },
+    {
+        "id": 31,
+        "name": "News",
+        "slug": "news"
+    },
+    {
+        "id": 32,
+        "name": "Open Data",
+        "slug": "open-data"
+    },
+    {
+        "id": 33,
+        "name": "Open Source Projects",
+        "slug": "open-source-projects"
+    },
+    {
+        "id": 34,
+        "name": "Patent",
+        "slug": "patent"
+    },
+    {
+        "id": 35,
+        "name": "Personality",
+        "slug": "personality"
+    },
+    {
+        "id": 36,
+        "name": "Phone",
+        "slug": "phone"
+    },
+    {
+        "id": 37,
+        "name": "Photography",
+        "slug": "photography"
+    },
+    {
+        "id": 38,
+        "name": "Podcasts",
+        "slug": "podcasts"
+    },
+    {
+        "id": 39,
+        "name": "Programming",
+        "slug": "programming"
+    },
+    {
+        "id": 40,
+        "name": "Science & Math",
+        "slug": "science-and-math"
+    },
+    {
+        "id": 41,
+        "name": "Security",
+        "slug": "security"
+    },
+    {
+        "id": 42,
+        "name": "Shopping",
+        "slug": "shopping"
+    },
+    {
+        "id": 43,
+        "name": "Social",
+        "slug": "social"
+    },
+    {
+        "id": 44,
+        "name": "Sports & Fitness",
+        "slug": "sports-and-fitness"
+    },
+    {
+        "id": 45,
+        "name": "Test Data",
+        "slug": "test-data"
+    },
+    {
+        "id": 46,
+        "name": "Text Analysis",
+        "slug": "text-analysis"
+    },
+    {
+        "id": 47,
+        "name": "Tracking",
+        "slug": "tracking"
+    },
+    {
+        "id": 48,
+        "name": "Transportation",
+        "slug": "transportation"
+    },
+    {
+        "id": 49,
+        "name": "URL Shorteners",
+        "slug": "url-shorteners"
+    },
+    {
+        "id": 50,
+        "name": "Vehicle",
+        "slug": "vehicle"
+    },
+    {
+        "id": 51,
+        "name": "Video",
+        "slug": "video"
+    },
+    {
+        "id": 52,
+        "name": "Weather",
+        "slug": "weather"
+    }
+]
