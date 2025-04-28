@@ -50,7 +50,7 @@ insert into category (id,name,slug) values (49,'URL Shorteners','url-shorteners'
 insert into category (id,name,slug) values (50,'Vehicle','vehicle');
 insert into category (id,name,slug) values (51,'Video','video');
 insert into category (id,name,slug) values (52,'Weather','weather');
-insert into category (id,name,slug) values (53,'Weatherrrrrr','weatherrrrr');
+insert into category (id,name,slug) values (53,'Mauro','Mauro Telles');
 
 
 
@@ -1510,6 +1510,4 @@ insert into resource (api,description,auth,https,cors,link,category_id,id) value
 insert into resource (api,description,auth,https,cors,link,category_id,id) values ('WeatherAPI','Weather API with other stuff like Astronomy and Geolocation API','apiKey',true,'yes','https://www.weatherapi.com/',52,1454);
 insert into resource (api,description,auth,https,cors,link,category_id,id) values ('Weatherbit','Weather','apiKey',true,'unknown','https://www.weatherbit.io/api',52,1455);
 insert into resource (api,description,auth,https,cors,link,category_id,id) values ('Yandex.Weather','Assesses weather condition in specific locations','apiKey',true,'no','https://yandex.com/dev/weather/',52,1456);
-
-
 

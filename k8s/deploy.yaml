@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: apilist
-          image: msergiost/apilist:v1
+          image: msergiost/apilist:v2.1
           ports:
             - name: http
               containerPort: 8080
@@ -74,36 +74,36 @@ spec:
     protocol: TCP
     nodePort: 30001
   type: NodePort
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: exec1
-  labels:
-    app: exec1
-spec:
-  containers:
-  - name: exec1
-    image: busybox
-    command: # => EntryPoint
-    - echo
-    args: #=> CMD
-    - "--->>>>>>>>>>>>>> Hello World"
-  restartPolicy: Never
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: exec2
-  labels:
-    app: exec2
-spec:
-  containers:
-  - name: exec2
-    image: busybox
-    command: # => EntryPoint
-      - /bin/sh
-    args: #=> CMD
-      - -c
-      - touch /tmp/teste.txt; sleep 120;
-  restartPolicy: Never
+#---
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: exec1
+#  labels:
+#    app: exec1
+#spec:
+#  containers:
+#  - name: exec1
+#    image: busybox
+#    command: # => EntryPoint
+#    - echo
+#    args: #=> CMD
+#    - "--->>>>>>>>>>>>>> Hello World"
+#  restartPolicy: Never
+#---
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: exec2
+#  labels:
+#    app: exec2
+#spec:
+#  containers:
+#  - name: exec2
+#    image: busybox
+#    command: # => EntryPoint
+#      - /bin/sh
+#    args: #=> CMD
+#      - -c
+#      - touch /tmp/teste.txt; sleep 120;
+#  restartPolicy: Never
