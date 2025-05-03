@@ -20,6 +20,13 @@ spec:
               containerPort: 8080
               protocol: TCP
           #imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet: 
+              port: 8080
+              path: /health
+              #httpHeaders:
+              #  - name: token
+              #    value: 
 ---
 apiVersion: v1
 kind: Service
