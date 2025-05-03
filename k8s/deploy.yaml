@@ -14,16 +14,38 @@ spec:
     spec:
       containers:
         - name: apilist
-          image: msergiost/apilist:v2.1
+          image: msergiost/apilist:v2.2
           ports:
             - name: http
               containerPort: 8080
               protocol: TCP
           #imagePullPolicy: IfNotPresent
-          livenessProbe:
-            httpGet: 
+          startupProbe:
+            httpGet:
+              path: /actuator/health
               port: 8080
-              path: /health
+            initialDelaySeconds: 180 # Aumente o delay inicial
+            periodSeconds: 5
+            failureThreshold: 3
+            timeoutSeconds: 180
+          livenessProbe:
+            httpGet:
+              path: /actuator/health # Endpoint específico para liveness (opcional)
+              port: 8080
+            initialDelaySeconds: 180 # Começa após o startupProbe
+            periodSeconds: 10
+            timeoutSeconds: 180
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /actuator/health # Endpoint específico para readiness (opcional)
+              port: 8080
+            initialDelaySeconds: 180 # Começa após o startupProbe
+            periodSeconds: 5
+            timeoutSeconds: 180
+            failureThreshold: 3
+      #imagePullSecrets:
+      #  - name: docker-auth
               #httpHeaders:
               #  - name: token
               #    value: 
