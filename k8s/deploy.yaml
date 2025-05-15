@@ -1,7 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nsapilist
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: apilist
+  namespace: nsapilist
 spec:
   replicas: 1
   selector:
@@ -14,12 +20,28 @@ spec:
     spec:
       containers:
         - name: apilist
-          image: msergiost/apilist:v2.2
+          image: msergiost/apilist:v2.3
           ports:
             - name: http
               containerPort: 8080
               protocol: TCP
           #imagePullPolicy: IfNotPresent
+          env:
+            - name: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: db-apilist-secret
+                  key: DB_HOST
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: db-apilist-secret
+                  key: DB_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-apilist-secret
+                  key: DB_PASSWORD
           startupProbe:
             httpGet:
               path: /actuator/health
@@ -54,6 +76,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: apilist
+  namespace: nsapilist
 spec:
   selector:
     app: apilist
@@ -69,6 +92,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: apilist-web
+  namespace: nsapilist
 spec:
   replicas: 1
   selector:
@@ -93,6 +117,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: apilist-web
+  namespace: nsapilist
 spec:
   selector:
     app: apilist-web
@@ -136,3 +161,8 @@ spec:
 #      - -c
 #      - touch /tmp/teste.txt; sleep 120;
 #  restartPolicy: Never
+
+#apiVersion: v1
+#kind: namespace
+#metadata:
+#  name: homologacao
