@@ -86,4 +86,4 @@ metadata:
   namespace: nsdatabase
 data:
   01-createDB.sql: |
-    SELECT 'CREATE DATABASE apilist' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'apilist')\gexec
+    SELECT 'CREATE DATABASE apilist' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'apilist')\gexec ;

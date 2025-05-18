@@ -36,6 +36,7 @@ class SecuredController {
 
 	@GetMapping("/logout")
 	public String logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
+		System.out.println("authentication: " + authentication);
 		if (authentication != null) {
 			new SecurityContextLogoutHandler().logout(request, response, authentication);
 		}

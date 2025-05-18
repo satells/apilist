@@ -1,0 +1,1 @@
+docker run -d --name=prometheus -p 9090:9090 -v /home/mauro/shared/workspace/apilist/src/main/resources/prometheus.yaml:/etc/prometheus/prometheus.yaml prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
