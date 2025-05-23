@@ -19,5 +19,5 @@ jobs:
         run: node --version
       - name: Install dependencies
         uses: chill-viking/npm-ci@latest
-        with:
+#        with:
 #          working_directory: './front/apilist-front/'
