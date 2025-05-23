@@ -17,7 +17,7 @@ jobs:
 
       - name: "verificando versão do node depois de instalar"
         run: node --version
-      - uses: chill-viking/npm-ci@latest
-        name: Install dependencies
+      - name: Install dependencies
+        uses: chill-viking/npm-ci@latest
         with:
-          working_directory: './front/apilist-front/'
+#          working_directory: './front/apilist-front/'
