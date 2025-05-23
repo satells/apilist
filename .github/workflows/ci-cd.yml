@@ -5,21 +5,16 @@ on:
   workflow_dispatch:
 jobs:
   CI:
-    name: "primeiro job"
+    name: "job CI"
     runs-on: ubuntu-latest
     steps: 
+      - name: "verificando versão do node"
+        run: node --version
       - name: obtendo o código
-        uses: actions/checkout@v4.2.2
-      - name: Configurando Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3.9.1
         with:
-          node-version: '22' # Ou a versão do Node.js que seu projeto utiliza (ex: '20', '16')
+          node-version: '22.16.0' # Ou a versão do Node.js que seu projeto utiliza (ex: '20', '16')
 
-      - name: Instalando dependências
-        run: npm install # Ou yarn install, se você usa Yarn
-        working-directory: ./apilist/front/apilist-front/ # Define o diretório de trabalho para este passo
-  
-      - name: Construindo o projeto React
-        run: npm run build # Ou yarn build, se você usa Yarn
-        working-directory: ./apilist/front/apilist-front/ # Define o diretório de trabalho para este passo
+      - name: "verificando versão do node depois de instalar"
+        run: node --version
         
