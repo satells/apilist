@@ -5,4 +5,23 @@ on:
   workflow_dispatch:
 jobs:
   CI:
-    runs-on: 
+    runs-on: ubuntu-latest
+    steps: 
+    - name: obtendo o código
+      uses: actions/checkout@v4.2.2
+    - name: Configurando Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22' # Ou a versão do Node.js que seu projeto utiliza (ex: '20', '16')
+
+    - name: Navegando para o diretório do frontend
+      run: cd apilist/front/apilist-front/
+
+    - name: Instalando dependências
+      run: npm install # Ou yarn install, se você usa Yarn
+      working-directory: ./apilist/front/apilist-front/ # Define o diretório de trabalho para este passo
+
+    - name: Construindo o projeto React
+      run: npm run build # Ou yarn build, se você usa Yarn
+      working-directory: ./apilist/front/apilist-front/ # Define o diretório de trabalho para este passo
+      
