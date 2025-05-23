@@ -1,4 +1,4 @@
-name: CI-CD
+name: Instalar-Node
 on: 
   push:
     branches: ["main"]
