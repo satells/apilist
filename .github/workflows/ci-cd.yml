@@ -4,8 +4,8 @@ on:
     branches: ["main"]
   workflow_dispatch:
 jobs:
-  CI:
-    name: "job CI"
+  install_node:
+    name: "install node"
     runs-on: ubuntu-latest
     steps: 
       - name: "verificando versão do node"
